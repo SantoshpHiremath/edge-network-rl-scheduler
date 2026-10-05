@@ -103,7 +103,7 @@ def test_epsilon_decays_but_does_not_go_below_floor():
 def test_tie_breaking_is_random_not_always_first_index():
     """With an all-zero Q-row (a fresh/unvisited state), action
     selection under greedy mode should not always return action 0 --
-    otherwise the agent would have a silent, undisclosed bias toward
+    otherwise the agent would have a silent bias toward
     low-indexed actions before it has learned anything."""
     agent = QLearningAgent(n_actions=5, seed=7)
     state = (9, 9, 9, 9, 9)  # never touched -> all zeros

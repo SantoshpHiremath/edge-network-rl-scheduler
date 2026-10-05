@@ -1,15 +1,13 @@
 """
-A real, from-scratch tabular Q-learning agent for the EdgeSchedulingEnv.
+A from-scratch tabular Q-learning agent for the EdgeSchedulingEnv.
 
 The environment's observation space is continuous (load fractions), so
 it's discretized into bins before being used as a Q-table key -- a
-standard, honest approach for applying tabular Q-learning to a
-low-dimensional continuous space, disclosed here rather than silently
-assumed. A deep RL approach (DQN) would remove the need for
-discretization, but a tabular agent is easier to inspect, debug, and
-verify correctness of -- appropriate for a small state space like this
-one, and a deliberate, disclosed design choice rather than a
-limitation hidden from the reader.
+standard approach for applying tabular Q-learning to a
+low-dimensional continuous space. A deep RL approach (DQN) would remove
+the need for discretization, but a tabular agent is easier to inspect,
+debug, and verify correctness of -- appropriate for a small state space
+like this one.
 """
 
 from collections import defaultdict

@@ -1,6 +1,6 @@
 """
 A simple heuristic baseline policy, used to give the learned Q-learning
-agent something honest to be measured against -- "the agent learned
+agent a solid reference to be measured against -- "the agent learned
 something" only means something if it's compared to a real alternative,
 not just to random action selection.
 
